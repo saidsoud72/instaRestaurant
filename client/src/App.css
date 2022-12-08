@@ -1,45 +1,230 @@
-@import url('http://fonts.cdnfonts.com/css/billabong');
-#logo {
-  font-family: 'Billabong', sans-serif;
-  font-size: 38px;
+
+
+
+h2.header {
+  padding-bottom: 40px;
 }
 
-.twinsies {
+div#username {
+  line-height: 3;
+}
+
+div#email {
+  line-height: 3;
+}
+
+div#password {
+  line-height: 3;
+}
+
+div#password_confirmation {
+  line-height: 3;
+}
+
+div#navbar {
   display: flex;
-  padding-top: 3rem;
+  justify-content: space-between;
+  height: 110px;
+  align-items: center;
+}
+
+img.pfp {
+  border-radius: 50%;
+  width: 60px;
+  border: solid #4f4f7a;
+}
+
+.hoe {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 200px;
+  height: 100vh;
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #616181;
+  height: 40%;
+  margin-left: 10%;
+}
+
+.logo {
+  padding-left: 5%;
+}
+
+.logo h2 {
+  font-size: 48px;
+  color: #df924f;
+}
+
+button#primary-btn {
+  line-height: 3;
+  margin-top: 20px;
+  background: #52698b;
+  border: none;
 }
 
 button#transparentbtn {
-  background: none;
-  border: none;
-  color: #0d6efd;
-  margin-bottom: 3px;
+  background: transparent;
+  border-color: #52698b;
+  color: #52698b;
+  margin-top: 15px;
+  padding: 10px 150px 10px 150px;
 }
 
-img.profile {
-  width: 2rem;
-  border-radius: 50%;
+.twinsies {
+  line-height: 3;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.nav {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  padding-right: 10%;
+  font-size: 20px;
+}
+
+.headerImage img {
+  width: 621px;
+}
+
+.headertext {
+  line-height: 1.8;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-comp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 85vh;
+}
+
+.headertext h2 {
+  font-size: 46px;
+}
+
+.accounts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }
 
 img.pic {
-  max-width: 30%;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28px;
+}
+
+.btn-profile {
+  margin-top: 20px;
+}
+
+button.update {
+  border: solid 1px #ccc;
+}
+
+.bio {
+  width: 350px;
+}
+
+.container-events {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+  gap: 350px;
+}
+
+div#ting {
+  line-height: 3;
+}
+
+.events-images img {
+  width: 600px;
+}
+
+.newpost {
+  display: flex;
+  justify-content: end;
+  margin-right: 10%;
+  font-size: 48px;
+}
+
+.listComponent {
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 108px;
+  justify-content: center;
+}
+
+.post-card img {
+  width: 400px;
+  border-radius: 20px;
+}
+
+.p-component {
+  display: flex;
+  gap: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 40%;
+}
+
+.p-component img {
+  width: 30px;
   border-radius: 50%;
 }
 
-div#m {
-  padding-left: 20px;
-}
-.card-img-top{
-  height: 400px;
-}
-
-img.postimage {
-  width: 3rem;
-  border-radius: 50%;
-}
-
-button.close {
+button#logout {
+  background: burlywood;
   border: none;
-  margin-left: 25rem;
+}
+
+div#insta {
+  margin-left: 30%;
+  padding-top: 20px;
+}
+
+.tab-container {
+  margin-left: 40%;
+}
+
+.myposts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-events {
+  text-align: center;
 }

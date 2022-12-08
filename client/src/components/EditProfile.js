@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'react-bootstrap'
 
 function EditProfile({ profile }) {
     const [username, setUsername] = useState(profile.username);
     const [email, setEmail] = useState(profile.email);
     const [profilepic, setProfilePic] = useState(profile.profile_pic);
+    const [bio, setBio] = useState("hello world... its me");
     // const [errors, setErrors] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
 
-    function handleSubmit() {
+    function handleSubmit(e) {
+        e.preventDefault();
         setIsLoading(true);
-        fetch("/update", {
+        fetch("/updateprofile", {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -20,6 +22,7 @@ function EditProfile({ profile }) {
             username,
             email,
             profile_pic: profilepic,
+            bio
           }),
         }).then((r) => {
           setIsLoading(false);
@@ -59,6 +62,14 @@ function EditProfile({ profile }) {
       value={profilepic}
       onChange={(e) => setProfilePic(e.target.value)}
       required
+    />
+  </Form.Group>
+  <Form.Group id="image_url_event">
+    <Form.Label>bio</Form.Label>
+    <Form.Control
+      type="text-area"
+      value={bio}
+      onChange={(e) => setBio(e.target.value)}
     />
   </Form.Group>
   <br />

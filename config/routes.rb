@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
-  post '/register', to: "users#create"
-  post "/login", to: "sessions#create"
-  post "createpost", to: "posts#create"
-  get "/posts", to: "posts#index"
+  post "/signup", to: "users#create"
   get "/me", to: "users#show"
-  get "comments", to: "comments#index"
-  post "postcomments", to: "comments#create"
-  patch "/likes", to: "posts#update"
+  post "/login", to: "sessions#create"
+  post "/addevent", to: "events#create"
+  post "/addpost", to: "posts#create"
+  get "posts", to: "posts#index"
+  get "/events", to: "events#index"
+  patch "/updateprofile", to: "users#update"
   delete "/logout", to: "sessions#destroy"
-  patch "/update", to: "users#update"
-  get "/post/[:id]", to: "posts#show"
-  delete "/users", to: "users#delete"
-  
+  patch "/likes", to: "posts#update"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

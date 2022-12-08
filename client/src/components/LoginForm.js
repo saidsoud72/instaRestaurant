@@ -2,15 +2,9 @@ import React, { useState } from "react";
 import { Form, Button, Alert } from 'react-bootstrap'
 
 
-function Signup({ onLogin, setShowLogin }) {
+function LoginForm({ onLogin, setShowLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
-  const [email, setEmail] = useState("");
-  const [profile, setProfile] = useState("https://i.pinimg.com/736x/f9/96/8d/f9968df268c7dab39bef20cff0a058cf.jpg");
-  const [bio, setBio] = useState("hello world... its me");
-  const [followers, setFollowers] = useState("0")
-  const [estate, setEstate] = useState("woodvale avenue 213st street")
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -18,20 +12,14 @@ function Signup({ onLogin, setShowLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/signup", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         username,
-        email,
-        password,
-        password_confirmation: passwordConfirmation,
-        bio,
-        estate,
-        profile_pic: profile,
-        followers
+        password
       }),
     }).then((r) => {
       setIsLoading(false);
@@ -47,13 +35,13 @@ function Signup({ onLogin, setShowLogin }) {
     <>
     <div className="hoe">
       <div className='w-100' style={{ maxWidth: "370px" }}>
-        <h2 className="header">Create Account</h2>
-          {errors.map((err) => (
+        <h2 className="header">Welcome back, Log in to get started</h2>
+        <Form onSubmit={handleSubmit}>
+        {errors.map((err) => (
           <Alert variant="danger">{err}</Alert>
         ))}
-        <Form onSubmit={handleSubmit}>
         <Form.Group id="username">
-        <Form.Label>Your fullname*</Form.Label>
+        <Form.Label>Enter Username*</Form.Label>
         <Form.Control
           type="text"
           autoComplete="off"
@@ -62,34 +50,15 @@ function Signup({ onLogin, setShowLogin }) {
           required
           />
         </Form.Group>
-        <Form.Group id="email">
-        <Form.Label>Email address*</Form.Label>
-        <Form.Control
-          type="text"
-          autoComplete="off"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          />
-        </Form.Group>
 
       <Form.Group id="password">
-        <Form.Label>Create Password*</Form.Label>
+        <Form.Label>Enter Password*</Form.Label>
         <Form.Control
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete="current-password"
           required
-        />
-      </Form.Group>
-      <Form.Group id="password_confirmation">
-        <Form.Label>Password Confirmation*</Form.Label>
-        <Form.Control
-          type="password"
-          value={passwordConfirmation}
-          onChange={(e) => setPasswordConfirmation(e.target.value)}
-          autoComplete="current-password"
         />
       </Form.Group>
       <br />
@@ -103,11 +72,12 @@ function Signup({ onLogin, setShowLogin }) {
       <div className="divider">
         <hr />
       </div>
-      <div className="twinsies">
-          <h2>Sign in</h2>
-          <p>The fun awaits on the other side</p>
 
-          <Button id="transparentbtn" onClick={() => setShowLogin(true)}>Login</Button>
+      <div className="twinsies">
+          <h2>Sign Up</h2>
+          <p>Join our fun community we share and network</p>
+
+          <Button id="transparentbtn" onClick={() => setShowLogin(false)}>Signup</Button>
 
       </div>
       </div>
@@ -117,4 +87,4 @@ function Signup({ onLogin, setShowLogin }) {
   );
 }
 
-export default Signup;
+export default LoginForm;
