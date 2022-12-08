@@ -1,5 +1,5 @@
 # jirani
- ## By Yahya Hussein
+ ## By Said Soud Omar
  ![Screenshot from 2022-10-16 14-38-05](https://user-images.githubusercontent.com/74947307/196033256-3352ff87-1cfa-423b-a69a-4b0c4592c1ee.png)
 
 
@@ -42,7 +42,7 @@ As a user of the application,you will be able to :
 
 ### Installation Process
  ****
- * Clone to the repo : https://github.com/Yhworld/jirani
+ * Clone to the repo : https://github.com/saidsoud72/jiraniview
 * Unzip the downloaded files in a folder of choice.
 * Run npm install once your in the terminal
 * Run bundle install
@@ -62,7 +62,7 @@ As a user of the application,you will be able to :
 ## Licence
 MIT License
 
-Copyright (c) 2022 Yahya
+Copyright (c) 2022 Said
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -82,4 +82,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ## Authors Info
-Slack Profile - [Yahya Ibrahim](https://app.slack.com/client/T077KKCG6/GLRQR61NW/user_profile/UKXCHMCNP?cdn_fallback=1)
+Slack Profile - [Said Omar](https://app.slack.com/client/T077KKCG6/GLRQR61NW/user_profile/UKXCHMCNP?cdn_fallback=1)
