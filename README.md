@@ -1,5 +1,5 @@
 # PawFinder
-## Author: Mwanzia Nelson Mutinda
+## Author: Said Soud Omar
 ### General Information
 **PawFinder** Is a web application that aims to make the process of searching for lost pets easier and rid distraught pet owners of unnecessary burdens. PawFinder uses a RESTful API that allows its users to post their missing pets and delete the posts after finding them.
 ### Technologies/Features 
@@ -19,7 +19,7 @@
 2. Allow pet owners to delete their posts/updates.
 
 ### Copyright and License (MIT)
-Copyright (c) 2022 Mwanzia Nelson Mutinda
+Copyright (c) 2022 Said Soud Omar
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -41,8 +41,8 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ### Contact
-- [Nelson Mutinda](https://github.com/nelsonmutindamwanzia)
-- nmutinda02@gmail.com
+- [Said Soud Omar](https://github.com/nelsonmutindamwanzia)
+- saidsoud72@gmail.com
 
 ### Live Links
 - [Frontend](https://pawfinder-web.netlify.app/)
@@ -50,4 +50,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ### Backend Repository Link
 - [PawFinder Backend](https://github.com/nelsonmutindamwanzia/pawfinder-backend)
 
-# PawFinder by Mwanzia Nelson Mutinda
+# PawFinder by Said Soud Omar
