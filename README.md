@@ -48,6 +48,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - [Frontend](https://pawfinder-web.netlify.app/)
 - [Backend](https://paw-finder-production.up.railway.app)
 ### Backend Repository Link
-- [PawFinder Backend](https://github.com/nelsonmutindamwanzia/pawfinder-backend)
+- [PawFinder Backend](https://github.com/saidsoud72/phase4-ruby-on-rails-project.-backend-)
 
 # PawFinder by Said Soud Omar
